@@ -5,8 +5,8 @@ new Vue({
         value: 10
     },
     methods: {
-        greet(time) {
-            return `hello ${this.message} ${time}`
+        greet() {
+            this.value++
         },
     }
 
