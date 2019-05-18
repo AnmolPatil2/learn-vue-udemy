@@ -19,14 +19,9 @@
 <body>
     <h1>vue</h1>
     <div id="app">
-        <h2>{{message}}</h2>
-        <p>{{value}}</p>
-        <button @click="greet()">hello</button>
-        <button @click="logEvent">Log event object</button>
-        <div class="canvas" @mousemove="logCoords">{{ coords.x }}, {{ coords.y }}</div>
+        <input type="text" v-model="name">
         <p>name is {{name}} </p>
-        <input type="text" @keyup="updateName" :value="name">
-        <input type="text" @keypress="updateName" :value="name">
+
     </div>
     <script src="app.js"></script>
 </body>
