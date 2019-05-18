@@ -1,22 +1,26 @@
 <html>
 
 <head>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-    <title>Learn vue</title>
-
+    <title>Vue.js Basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
 
 <body>
-    <h1>vue</h1>
+
+    <h1>Vue Basics</h1>
     <div id="app">
-        <p v-if="show">{{name}}</p>
-        <p v-else-if="age">name</p>
-        <button @click="this.age = !this.age">age</button>
-        <button @click="toggle">{{show}}</button>
+        <h2>{{ title }}</h2>
+        <ul>
+            <li v-for="item in items">{{ item }}</li>
+        </ul>
+        <div v-for="(ninja, index) in ninjas">
+            <p>{{ index }} - {{ ninja.name }}</p>
+            <p>age: {{ ninja.age }}</p>
+            <p>belt colour: {{ ninja.belt }}</p>
+        </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
