@@ -1,9 +1,13 @@
 new Vue({
     el: '#app',
     data: {
-        name: 'anmol'
+
     },
-    methods: {}
+    methods: {
+        log() {
+            console.log("hiii")
+        }
+    }
 
 
 })
