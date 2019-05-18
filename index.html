@@ -14,9 +14,8 @@
     <h1>vue</h1>
     <div id="app">
         <h2>{{message}}</h2>
-        <p>{{greet('morning')}}</p>
-        <input type="text" v-bind:value="name">
-        <div :class="class_n"></div>
+        <p>{{value}}</p>
+        <button @click="value++">hello</button>
     </div>
     <script src="app.js"></script>
 </body>
