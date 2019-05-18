@@ -12,8 +12,11 @@
 <body>
     <h1>vue</h1>
     <div id="app">
-        <a href="wwww.google.com" @click.prevent="log()">google</a> </div>
-    <script src="app.js"></script>
+        <p v-if="show">{{name}}</p>
+        <p v-else-if="age">name</p>
+        <button @click="this.age = !this.age">age</button>
+        <button @click="toggle">{{show}}</button>
+    </div>
 </body>
 
 </html>

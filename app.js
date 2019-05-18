@@ -1,11 +1,18 @@
 new Vue({
     el: '#app',
     data: {
+        show: true,
+        age: true,
+        name: 'l',
+
 
     },
     methods: {
-        log() {
-            console.log("hiii")
+        toggle() {
+            this.show = !this.show
+        },
+        toggle1() {
+            this.age = !this.age
         }
     }
 
